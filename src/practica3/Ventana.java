@@ -319,8 +319,9 @@ public class Ventana extends javax.swing.JFrame {
     }//GEN-LAST:event_btndrawActionPerformed
     public void dibujar(int tipodefigura, int linea, int transformacion){      
 
-       if (rsolido.isSelected())relleno = 4;
-       if (rtextura.isSelected())relleno = 7;
+       if (rsolido.isSelected())relleno = 1;
+       if (rtextura.isSelected())relleno = 2;
+       if (rdegradado.isSelected())relleno = 3;
        
        f.Aplicar(pizarron.getGraphics(), 5, 130, 50, 50, relleno, tipodefigura, linea, transformacion);
     }
